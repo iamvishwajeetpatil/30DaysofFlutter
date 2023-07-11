@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_day1/home_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -9,18 +10,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        backgroundColor: Colors.blue[200],
-        appBar: AppBar(
-          backgroundColor: Colors.blue,
-          elevation: 0,
-        ),
-        body: Center(
-          child: Text("New Begginning",style: TextStyle(color: Colors.white,fontSize: 20.0,fontWeight: FontWeight.bold),),
-        ),
-      ),
-    );
+    return MaterialApp(debugShowCheckedModeBanner: false, home: HomeScreen());
   }
 }
