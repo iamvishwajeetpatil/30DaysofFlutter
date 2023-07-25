@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         // primaryTextTheme: GoogleFonts.latoTextTheme(),
       ),
       darkTheme: ThemeData(brightness: Brightness.dark),
-      initialRoute: "/",
+      initialRoute: MyRoutes.homeRoute,
       routes: {
         "/": (context) => const LoginScreen(),
         MyRoutes.homeRoute: (context) => const HomeScreen(),

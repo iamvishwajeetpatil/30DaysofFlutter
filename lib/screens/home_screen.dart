@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_day1/widgets/drawer.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -8,24 +9,20 @@ class HomeScreen extends StatelessWidget {
     int days = 1;
     String t = "Day";
     return Scaffold(
-      backgroundColor: Colors.blue[200],
+      // backgroundColor: Colors.blue[200],
       appBar: AppBar(
-        backgroundColor: Colors.blue,
+        // backgroundColor: Colors.blue,
         elevation: 0,
-        title: Text("Welcome Vishwa"),
+        title: Text("Catalog App"),
         centerTitle: true,
       ),
       body: Center(
         child: Text(
-          "New Begginning\n$t $days",
-          style: TextStyle(
-              color: Colors.white, fontSize: 20.0, fontWeight: FontWeight.bold),
+          "New Begginning $t $days",
+          style: TextStyle(fontSize: 10.0, fontWeight: FontWeight.bold),
         ),
       ),
-      drawer: Drawer(
-        backgroundColor: Colors.blue,
-        width: 200.0,
-      ),
+      drawer: const MyDrawer(),
     );
   }
 }
