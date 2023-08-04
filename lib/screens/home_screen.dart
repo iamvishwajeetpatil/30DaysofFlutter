@@ -11,8 +11,6 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       // backgroundColor: Colors.blue[200],
       appBar: AppBar(
-        // backgroundColor: Colors.blue,
-        elevation: 0,
         title: Text("Catalog App"),
         centerTitle: true,
       ),
