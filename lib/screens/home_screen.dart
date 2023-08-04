@@ -16,11 +16,16 @@ class HomeScreen extends StatelessWidget {
         title: Text("Catalog App"),
         centerTitle: true,
       ),
-      body: Center(
-        child: Text(
-          "New Begginning $t $days",
-          style: TextStyle(fontSize: 10.0, fontWeight: FontWeight.bold),
-        ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Center(
+            child: Text(
+              "New Begginning $t $days",
+              style: TextStyle(fontSize: 10.0, fontWeight: FontWeight.bold),
+            ),
+          ),
+        ],
       ),
       drawer: const MyDrawer(),
     );
