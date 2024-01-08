@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_day1/screens/login_screen.dart';
 import 'package:flutter_application_day1/utils/routes.dart';
 import 'package:flutter_application_day1/widgets/thems.dart';
+import 'screens/home_screen.dart';
 // import 'package:flutter_application_day1/screens/home_screen.dart';
 import 'screens/home_screen.dart';
 
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
       initialRoute: MyRoutes.homeRoute,
       routes: {
         "/": (context) => const LoginScreen(),
-        MyRoutes.homeRoute: (context) => const HomeScreen(),
+        MyRoutes.homeRoute: (context) => HomeScreen(),
         MyRoutes.loginRoute: (context) => const LoginScreen()
       },
     );
